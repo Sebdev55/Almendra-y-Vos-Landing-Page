@@ -90,7 +90,7 @@ section {
   margin: 0;
   background-image: url(images/flyer.jpeg); 
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   display: block;
 }
 
