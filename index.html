@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640px, initial-scale=.5, maximum-scale=.5" />
+
+    <meta name="color-scheme" content="light only">
+    <title>Almendra Y Vos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Almendra <span>y Vos</span></a>
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg " alt="Open Navigation">
+    
+                <nav id="nav" class="nav">
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Inicio</a></li>
+                        <li><a href="#features">Servicios</a></li>
+                        <li><a href="#social">Contacto</a></li>
+                        <li><a href="#contact">¿Cómo llegar?</a></li>
+                    </ul>
+                </nav>
+            </div>        
+        </div>
+    </header>
+
+    <section class="hero"></section>
+
+    <section class="features-section" id="features">
+        <div class="container">
+            <ul class="features-list">
+                <li>Ropa Infantil</li>
+                <li>Pañales</li>
+                <li>Juguetes</li>
+                <li>Artículos de librería</li>
+            </ul>
+        </div>
+
+        <div class="list-container">
+            <p>Envíos a todo el país</p>
+            <p>Todos los medios de pago</p>
+        </div>
+    </section>
+
+    <section class="social-section" id="social">
+        <div class="social-container">
+            <ul class="social-list">
+                <li><a href="https://www.instagram.com/almendrayvos/" target="_blank">
+                    <ion-icon class="ion-icon" name="logo-instagram"></ion-icon>
+                    Instagram
+                </a></li>
+                <li><a href="https://www.facebook.com/almendrayvostiendainfantil" target="_blank">
+                    <ion-icon class="ion-icon" name="logo-facebook"></ion-icon>
+                    Facebook
+                </a></li>
+                <li><a aria-label="Chat on WhatsApp" href="https://wa.link/0oujgo" target="_new">
+                    <ion-icon class="ion-icon" name="logo-whatsapp"></ion-icon>
+                    WhatsApp
+                </a></li>
+                <li><a href="https://goo.gl/maps/B1EQMivMBBq48Fzo8" target="_new">
+                    <ion-icon class="ion-icon" name="planet-outline"></ion-icon>
+                    ¿Cómo llegar?
+                </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.8444967045125!2d-58.648036693276104!3d-34.456095069568654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xddf2c0c15f797723!2sAlmendra%20y%20Vos%20-%20Pa%C3%B1ales%20-%20Ropa%20Infantil%20-%20Juguetes!5e0!3m2!1ses!2sar!4v1675952857902!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-p">Codeado con <ion-icon name="heart-outline" class="footer-icon"></ion-icon> por <a href="https://www.linkedin.com/in/sebasti%C3%A1n-amoedo-53597919b/"  target="_new">Seb Amoedo</a></p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        
+
+        const mobileBtn = document.getElementById('mobile-cta');
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+            mobileBtn.style.display = 'none';
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+            mobileBtn.style.display = 'block';
+        })
+        
+    </script>
+
+</body>
+</html>
